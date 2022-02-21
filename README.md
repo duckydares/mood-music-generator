@@ -7,11 +7,14 @@ This repository provides insight into how to generate a playlist given a mood.
 
 ## TODO
 
-- [ ] Learn how to structure a python package for distrobution
+- [ ] Learn how to structure a python package for distribution
 - [ ] Structure the repository as a Python package  
 
 _Approach_:
 1. Connect to Spotify Web API
+  - To use [`spotipy`](https://spotipy.readthedocs.io/) or own personal coding?
+  - Use personal just to learn how to actual engage with an API
+  - Keep a 2nd running version that operates with `spotipy`
 2. Generate a dataset based on account library OR web scraping
 3. Construct a supervision dataset and perform prelimary data analysis
 4. Determine valid types of algorithm to run on the dataset to perform mood generation on
