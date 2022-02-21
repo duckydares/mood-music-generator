@@ -5,10 +5,21 @@
 
 This repository provides insight into how to generate a playlist given a mood.
 
+There are several aspects to this project that I think are useful for future purposes.
+
+1. Setting up an application for external usage; engaging directly with APIs
+2. Curating a dataset in Kaggle / locally
+3. Solidifying data analytics / machine learning capabilities
+
+I decided to utilize 13 (lucky #) moods based on [this paper](https://www.pnas.org/content/117/4/1924) and [interactive map](https://www.ocf.berkeley.edu/~acowen/music.html#) as an initial set of moods to train against.
+
 ## TODO
 
-- [ ] Learn how to structure a python package for distribution
-- [ ] Structure the repository as a Python package  
+- [x] Learn how to structure a python package for distribution
+- [x] Structure the repository as a Python package
+- [ ] Set up a python spotify client to interface with the Spotify Web API
+- [ ] Set up a python kaggle client to interface with the Kaggle API
+- [x] Determine a set of initial moods
 
 _Approach_:
 1. Connect to Spotify Web API
