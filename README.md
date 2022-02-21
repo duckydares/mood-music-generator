@@ -20,6 +20,8 @@ I decided to utilize 13 (lucky #) moods based on [this paper](https://www.pnas.o
 - [ ] Set up a python spotify client to interface with the Spotify Web API
 - [ ] Set up a python kaggle client to interface with the Kaggle API
 - [x] Determine a set of initial moods
+- [ ] Which ML Python library? Torch vs Tensor?
+- [ ] 
 
 _Approach_:
 1. Connect to Spotify Web API
