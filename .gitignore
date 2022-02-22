@@ -2,4 +2,4 @@
 mood-music/
 
 # Spotipy Variables
-.cache/
+.cache
