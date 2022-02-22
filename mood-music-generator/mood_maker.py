@@ -1,6 +1,7 @@
 # Main File: Mood Maker
+import pdb
 import yaml
-import pandas
+import pandas as pd
 import spotipy
 import argparse
 
@@ -30,12 +31,27 @@ spotify = spotipy.Spotify(auth_manager=spotipy.oauth2.SpotifyOAuth(client_id=tok
                                                                    scope=scope))
 
 # Get ALL following artists and saved albums
-results = spotify.current_user_saved_tracks()
+album_results = spotify.current_user_saved_albums(limit=50, offset=0)
 
-for idx, item in enumerate(results['items']):
-    track = item['track']
-    print(idx, track['artists'][0]['name'], ' - ', track['name'])
+album_df = pd.DataFrame()
+
+# Generate a pandas dataframe of each album
+for idx, album in enumerate(album_results['items']):
+    album_df = pd.concat([album_df, pd.DataFrame(album)]) if idx != 0 else album_df.from_dict(album)
     
+# TODO 1. Clean Album DataFrame
+
+# TODO 2. Parse Album DataFrame into necessary components
+
+# TODO 3. Find All songs in album
+
+# TODO Repeat 1-2 for songs
+
+# TODO Collect all following artists
+
+# (Optional) Generate their whole discography at song-level
+
+# (Optional) Merge sets of song lists and make unique items
 
 # Add data to local dataset
 

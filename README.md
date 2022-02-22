@@ -30,8 +30,7 @@ I decided to utilize 13 (lucky #) moods based on [this paper](https://www.pnas.o
 _Approach_:
 1. Connect to Spotify Web API
   - To use [`spotipy`](https://spotipy.readthedocs.io/) or own personal coding?
-  - Use personal just to learn how to actual engage with an API
-  - Keep a 2nd running version that operates with `spotipy`
+  - I'm going to continue developing with the `spotify` dependency and have a separate branch for personal development of a client capable of O2 Auth code flow.
 2. Generate a dataset based on account library OR web scraping
 3. Construct a supervision dataset and perform prelimary data analysis
 4. Determine valid types of algorithm to run on the dataset to perform mood generation on
