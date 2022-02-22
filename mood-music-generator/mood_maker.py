@@ -17,10 +17,12 @@ assert(args.mood in accepted_moods, 'mood {0} not in be in {1}'.format(args.mood
 assert(args.duration > 0, 'duration {0} <= 0'.format(args.duration))
 
 # Load in tokens
-tokens = yaml.load(args.tokens)
+with open('../.spotify_auth_keys.yaml', 'r') as file:
+        tokens = yaml.load(file, yaml.CLoader)
 
 # Connect to Spotify API
 scope = 'user-library-read playlist-modify-private'
+
 # Add data to local dataset
 
 # (Optional) connect to Kaggle API & dump data to remote dataset

@@ -17,7 +17,8 @@ I decided to utilize 13 (lucky #) moods based on [this paper](https://www.pnas.o
 
 - [x] Learn how to structure a python package for distribution
 - [x] Structure the repository as a Python package
-- [ ] Set up a python spotify client to interface with the Spotify Web API
+- [ ] Set up a python spotify client to interface with the Spotify Web API  
+  - [ ] Determine how to handle O2 Auth Manager
 - [ ] Set up a python kaggle client to interface with the Kaggle API
 - [x] Determine a set of initial moods
 
