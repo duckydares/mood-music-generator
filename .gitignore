@@ -1,2 +1,5 @@
 # Python Virtual Environment
 mood-music/
+
+# Spotipy Variables
+.cache/

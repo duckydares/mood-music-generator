@@ -17,11 +17,15 @@ I decided to utilize 13 (lucky #) moods based on [this paper](https://www.pnas.o
 
 - [x] Learn how to structure a python package for distribution
 - [x] Structure the repository as a Python package
-- [ ] Set up a python spotify client to interface with the Spotify Web API
+- [x] Set up a python spotify client to interface with the Spotify Web API
 - [ ] Set up a python kaggle client to interface with the Kaggle API
 - [x] Determine a set of initial moods
 - [ ] Which ML Python library? Torch vs Tensor?
-- [ ] 
+- [ ] Generate a local dataset based on:
+  - [ ] User's library
+  - [ ] User's list of following artists
+  - [ ] User's list of followed user's playlists
+- [ ] Learn how to define a "mood" based on different components of a song
 
 _Approach_:
 1. Connect to Spotify Web API
