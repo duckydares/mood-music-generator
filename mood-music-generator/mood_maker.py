@@ -37,8 +37,12 @@ album_df = pd.DataFrame()
 
 # Generate a pandas dataframe of each album
 for idx, album in enumerate(album_results['items']):
-    album_df = pd.concat([album_df, pd.DataFrame(album)]) if idx != 0 else album_df.from_dict(album)
-    
+    album_df = pd.concat([album_df, pd.DataFrame().from_dict(album)]) if idx != 0 else album_df.from_dict(album)
+
+with open('debug/album_data.yaml', 'w') as file:
+    yaml.dump(album_df, file)
+
+pdb.set_trace()
 # TODO 1. Clean Album DataFrame
 
 # TODO 2. Parse Album DataFrame into necessary components
