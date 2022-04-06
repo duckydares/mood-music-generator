@@ -43,6 +43,8 @@ To start this application will be written in Python 3. I will utilize a virtual 
 
 ## Set Up
 
+Get the `client_id`, `client_secret`, and `redirect_url` and store it in a yaml file
+ 
 ## Build
 
 ## Run
