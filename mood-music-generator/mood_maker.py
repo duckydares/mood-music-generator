@@ -39,6 +39,7 @@ album_df = pd.DataFrame()
 for idx, album in enumerate(album_results['items']):
     album_df = pd.concat([album_df, pd.DataFrame().from_dict(album)]) if idx != 0 else album_df.from_dict(album)
 
+# Store all user's albums locally
 with open('debug/album_data.yaml', 'w') as file:
     yaml.dump(album_df, file)
 
